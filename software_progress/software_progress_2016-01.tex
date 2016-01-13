@@ -1,0 +1,24 @@
+Adoption of SWIF
+
+We have incoporated use of Scientific Computing's system for managing collections of related farm jobs, SWIF, into all of our large-scale computing projects. These include the bi-weekly reconstruction of recent data, simulation studies, and data challenges.
+
+E&M Background Simulation
+
+We have developed a method for incorporating a separately generated library of put-of-time electromagnetic background events into a sample of simulated physics events. This leverages the existing background generator, which takes into account a coherent photon beam and beam collimation to produce out of time hits. This method saves time by avoiding generation of E&M background on an event-by-event basis.
+
+EventStore
+
+Work continues on a system for adopting the CLEO EventStore system for use by GlueX. The system uses sets of independent event indices to allow access to a common reconstructed data set based on criteriathat vary from index to index. This function is usually done by skimming data sets to produce specialized streams in independent data sets, but that method often results in many events contributing to multiple streams with a net increase in the size of the reconstructed data set. Compact reconstructed data, beyond being efficiently stored, is easier to distribute to off-site institutions.
+
+Conversion to Git
+
+This past summer we transitioned from using Subversion for source code version control to using Git. We had a program of explaining the new system to the collaboration, designing the style of usage we would adopt, and providing documentation to help the new users. There has been marked improvement in communication about changes to the code using the tools available via GitHub.
+
+Spring 2015 Simulations Complete
+
+We completed a set of simulations to support analysis of data taken in the Spring of 2015. Thirty thousand jobs were run successfully on the farm for this effort.
+
+Software Distribution and Building
+
+A system for distributing, building, and maintaining multiple versions of our farious software packages, both those externally provided and those developed in-house, was enhanced and documented during the year. ...........[see gluex note for verbiage]
+
