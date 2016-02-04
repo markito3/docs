@@ -1,20 +1,39 @@
-Adoption of SWIF
+\documentclass[12pt]{article}
+
+\title{Progress in Hall D Offline Software, 2015}
+\author{Mark M.\ Ito}
+\date{February 4, 2016}
+
+% global parameters
+\textwidth=6.5in
+\oddsidemargin=0in % use built-in offset of 1 inch for left margin
+\evensidemargin=0in % ditto for even pages
+\textheight=9in
+\topmargin=0in
+\headheight=0in % no headers in this document
+\headsep=0in
+
+\begin{document}
+
+\maketitle
+
+\section{Adoption of SWIF}
 
 We have incoporated use of Scientific Computing's system for managing
 collections of related farm jobs, SWIF, into all of our large-scale
 computing projects. These include the bi-weekly reconstruction of
 recent data, simulation studies, and data challenges.
 
-E&M Background Simulation
+\section{Electromagnetic Background Simulation}
 
 We have developed a method for incorporating a separately generated
 library of put-of-time electromagnetic background events into a sample
 of simulated physics events. This leverages the existing background
 generator, which takes into account a coherent photon beam and beam
 collimation to produce out of time hits. This method saves time by
-avoiding generation of E&M background on an event-by-event basis.
+avoiding generation of E\&M background on an event-by-event basis.
 
-EventStore
+\section{EventStore}
 
 Work continues on a system for adopting the CLEO EventStore system for
 use by GlueX. The system uses sets of independent event indices to
@@ -26,7 +45,7 @@ streams with a net increase in the size of the reconstructed data
 set. Compact reconstructed data, beyond being efficiently stored, is
 easier to distribute to off-site institutions.
 
-Conversion to Git
+\section{Conversion to Git}
 
 This past summer we transitioned from using Subversion for source code
 version control to using Git. We had a program of explaining the new
@@ -41,13 +60,13 @@ at JLab using the branch proposed in the pull-request. We can now
 judge whether a change will compile and link before it is merged into
 the master branch.
 
-Spring 2015 Simulations Complete
+\section{Spring 2015 Simulations Complete}
 
 We completed a set of simulations to support analysis of data taken in
 the Spring of 2015. Thirty thousand jobs were run successfully on the
 farm for this effort.
 
-Software Distribution and Building
+\section{Software Distribution and Building}
 
 A system our various software packages, both those externally provided
 and those developed in-house, was enhanced and documented during the
@@ -66,10 +85,12 @@ compare results among them. The system is used to create binary
 distributions of all packages needed to run and develop GlueX
 software.
 
-Calibration Challenge
+\section{Calibration Challenge}
 
 Work is in progress on consolidating and automatizing all known calibration activities. Work will proceed in several passes, each one dependent on the results of the previous pass. The goal is production of calibration constants soon after experimental data is taken. A framework has been developed and several collaborators have started contributing the working pieces.
 
-Clang-based C++ Code Analyzer
+\section{Clang-based C++ Code Analyzer}
 
 We are now doing night generation of reports on questionable passages of our C++ code base using the Clang/LLVM compiler suite. A web page is generated; problem area are displayed and explanations for why code was flagged are given.
+
+\end{document}
