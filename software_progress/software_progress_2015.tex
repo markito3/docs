@@ -1,8 +1,8 @@
 \documentclass[12pt]{article}
 
 \title{Progress in Hall D Offline Software, 2015}
-\author{Mark M.\ Ito}
-\date{February 4, 2016}
+\author{Mark Ito, David Lawrence, Curtis Meyer}
+\date{February 9, 2016}
 
 % global parameters
 \textwidth=6.5in
@@ -17,6 +17,8 @@
 
 \maketitle
 
+We summarize new efforts in GlueX offline software development in the year just past.
+
 \section{Conversion from GEANT 3 to Geant4}
 
 Work continues on converting our GEANT 3 implementation of detector
@@ -26,6 +28,10 @@ appropriate classes instantiated. Work continues on implementing
 detector hit generation. One of the main benefits to the new system
 will be the ability to run multi-threaded. Scaling of execution speed
 with threads has been demonstrated.
+
+There are two implementations at present: one for the standard GlueX
+program (HDGeant4)\cite{g4-gluex} and one for the Charged Pion
+Polarizability Experiment (CPPsim)\cite{g4-cpp}.
 
 \section{Adoption of SWIF}
 
@@ -62,7 +68,8 @@ version control to using Git. We had a program of explaining the new
 system to the collaboration, designing the style of usage we would
 adopt, and providing documentation to help the new users. There has
 been marked improvement in communication about changes to the code
-using the tools available via GitHub. This completes a response to a
+using the tools available via GitHub\cite{gluex-github}.
+This completes a response to a
 recommendation from one of the Software Reviews.
 
 We have also implemented a system where pull-request generate a build
@@ -114,5 +121,17 @@ was flagged are given.
 \section{Upcoming Data Taking Run}
 
 We are planning to have the software components in place to be able to calibrate and process all data during the run itself.
+
+\begin{thebibliography}{9}
+
+\bibitem{g4-gluex} https://github.com/rjones30/HDGeant4
+
+\bibitem{g4-cpp}
+  https://halldsvn.jlab.org/repos/trunk/Experiments/PionPolarizability/src/CPPsim
+
+\bibitem{gluex-github}
+  https://github.com/orgs/JeffersonLab/teams/gluex/repositories
+
+\end{thebibliography}
 
 \end{document}
