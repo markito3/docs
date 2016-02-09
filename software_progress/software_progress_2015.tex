@@ -17,11 +17,21 @@
 
 \maketitle
 
+\section{Conversion from GEANT 3 to Geant4}
+
+Work continues on converting our GEANT 3 implementation of detector
+simulation to Geant4. The geometry definition complete in the new
+system. Here an XML-based specification is read in at run time and
+appropriate classes instantiated. Work continues on implementing
+detector hit generation. One of the main benefits to the new system
+will be the ability to run multi-threaded. Scaling of execution speed
+with threads has been demonstrated.
+
 \section{Adoption of SWIF}
 
 We have incorporated use of Scientific Computing's system for managing
 collections of related farm jobs, SWIF, into all of our large-scale
-computing projects. These include the bi-weekly reconstruction of
+computing projects. These include the bi-weekly trains doing reconstruction of
 recent data, simulation studies, and data challenges.
 
 \section{Electromagnetic Background Simulation}
@@ -35,8 +45,8 @@ avoiding generation of E\&M background on an event-by-event basis.
 
 \section{EventStore}
 
-Work continues on a system for adopting the CLEO EventStore system for
-use by GlueX. The system uses sets of independent event indices to
+Work continues on implementing EventStore (from CLEO) into GlueX.
+The system uses sets of independent event indices to
 allow access to a common reconstructed data set based on criteria that
 vary from index to index. This function is usually done by skimming
 data sets to produce specialized streams in independent data sets, but
@@ -87,10 +97,22 @@ software.
 
 \section{Calibration Challenge}
 
-Work is in progress on consolidating and automatizing all known calibration activities. Work will proceed in several passes, each one dependent on the results of the previous pass. The goal is production of calibration constants soon after experimental data is taken. A framework has been developed and several collaborators have started contributing the working pieces.
+Work is in progress on consolidating and automatizing all known
+calibration activities. Work will proceed in several passes, each one
+dependent on the results of the previous pass. The goal is production
+of calibration constants soon after experimental data is taken. A
+framework has been developed and several collaborators have started
+contributing the working pieces.
 
 \section{Clang-based C++ Code Analyzer}
 
-We are now doing night generation of reports on questionable passages of our C++ code base using the Clang/LLVM compiler suite. A web page is generated; problem area are displayed and explanations for why code was flagged are given.
+We are now doing night generation of reports on questionable passages
+of our C++ code base using the Clang/LLVM compiler suite. A web page
+is generated; problem area are displayed and explanations for why code
+was flagged are given.
+
+\section{Upcoming Data Taking Run}
+
+We are planning to have the software components in place to be able to calibrate and process all data during the run itself.
 
 \end{document}
