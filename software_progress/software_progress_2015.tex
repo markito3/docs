@@ -43,7 +43,7 @@ recent data, simulation studies, and data challenges.
 \section{Electromagnetic Background Simulation}
 
 We have developed a method for incorporating a separately generated
-library of put-of-time electromagnetic background events into a sample
+library of out-of-time electromagnetic background events into a sample
 of simulated physics events. This leverages the existing background
 generator, which takes into account a coherent photon beam and beam
 collimation to produce out of time hits. This method saves time by
@@ -72,8 +72,8 @@ using the tools available via GitHub\cite{gluex-github}.
 This completes a response to a
 recommendation from one of the Software Reviews.
 
-We have also implemented a system where pull-request generate a build
-at JLab using the branch proposed in the pull-request. We can now
+We have also implemented a system where pull requests on GitHub generate a build
+at JLab using the branch proposed in the pull request. We can now
 judge whether a change will compile and link before it is merged into
 the master branch.
 
@@ -85,7 +85,8 @@ farm for this effort.
 
 \section{Software Distribution and Building}
 
-A system our various software packages, both those externally provided
+A system for managing our various software packages,
+both those externally provided
 and those developed in-house, was enhanced and documented during the
 year. The goal is to insulate the user from the need to the master
 details of building each of several software packages as well as from
@@ -109,18 +110,22 @@ calibration activities. Work will proceed in several passes, each one
 dependent on the results of the previous pass. The goal is production
 of calibration constants soon after experimental data is taken. A
 framework has been developed and several collaborators have started
-contributing the working pieces.
+contributing the working pieces in the form of run-time-loaded plugins.
+
+The calibration effort in general is going well with all detector
+systems nearly at design resolution, if not better.
 
 \section{Clang-based C++ Code Analyzer}
 
-We are now doing night generation of reports on questionable passages
+We are now doing nightly generation of reports on questionable passages
 of our C++ code base using the Clang/LLVM compiler suite. A web page
-is generated; problem area are displayed and explanations for why code
-was flagged are given.
+is generated; problem areas are displayed and explanations
+for why these lines of code were flagged are given.
 
 \section{Upcoming Data Taking Run}
 
-We are planning to have the software components in place to be able to calibrate and process all data during the run itself.
+We are planning to have the software components in place to be able to
+calibrate and process all data during the run itself.
 
 \begin{thebibliography}{9}
 
