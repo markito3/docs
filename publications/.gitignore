@@ -1,0 +1,8 @@
+*.aux
+cite.tex
+publications.pdf
+publications.ps
+*.bbl
+*.blg
+*.dvi
+*.log
