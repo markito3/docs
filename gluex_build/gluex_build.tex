@@ -18,6 +18,8 @@
 \newcommand{\bs}{\textsc{Build Scripts}}
 \newcommand{\bcenter}{\begin{center}}
 \newcommand{\ecenter}{\end{center}}
+\newcommand{\bitem}{\begin{itemize}}
+\newcommand{\eitem}{\end{itemize}}
 
 \title{\bs: A Version Management System for GlueX \\ \medskip \large
   GlueX-Doc-2793-v16}
@@ -908,6 +910,30 @@ After the build is complete, there are two files in the gluex
 directory, setup.sh and setup.csh, that can be used to set-up the
 complete GlueX environment under Bourne-like shells or C-like shells
 respectively.
+
+\appendix
+
+\section{Descriptions of selected scripts in \bs}
+
+\subsection{\tt osrelease.pl}
+
+osrelease.pl is a Perl script that writes a string to standard output
+that identifies the operating system distribution, processor type, and
+compiler of the machine upon which it is executed. For example:
+\begin{verbatim}
+ > osrelease.pl
+ Linux_RHEL7-x86_64-gcc4.8.5
+\end{verbatim}
+
+This string is used in the GlueX software to label directories that have binary executables or libraries to facilitate compatible usage.
+
+There are four versions of this script, in the following directories, all basically the same:
+\bitem\tt
+\item \$BUILD\_SCRIPTS
+\item \$HALLD\_RECON\_HOME/src/BMS
+\item \$HALLD\_SIM\_HOME/src/BMS
+\item \$JANA\_HOME/../SBMS
+\eitem
 
 \end{document}
 
