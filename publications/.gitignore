@@ -1,7 +1,5 @@
 *.aux
-cite.tex
-publications.pdf
-publications.ps
+mywork.pdf
 *.bbl
 *.blg
 *.dvi

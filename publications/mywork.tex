@@ -1,0 +1,8 @@
+\documentclass[12pt]{article}   %or use your favorite doc class
+\renewcommand\refname{My Wonderful Publications}       %change as needed
+\providecommand{\href}[2]{#2}   %generates the href macro if needed
+\begin{document}
+   \nocite{*}                   %this uses *everything* in the .bib file
+   \bibliography{spires}        %or whatever your .bib file is
+   \bibliographystyle{utphys}   %if you use utphys.bst
+\end{document}   
