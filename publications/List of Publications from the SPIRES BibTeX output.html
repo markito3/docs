@@ -1,0 +1,60 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+  <title>List of Publications from the SPIRES BibTeX output</title>
+</head>
+<body>
+
+<h2>Preparing the LaTeX List of Publications from the SPIRES BibTeX
+output</h2>
+
+<h3>Instructions</h3>
+
+[1] copy the Spires output with the list of your articles in the BibTeX format to
+a file called, <i>e.g.,</i> spires.bib. (Delete a header and possible
+html markup at the top and bottom).<p>
+
+[2] choose from a variety of  <b>bst</b> files from 
+<a href="http://www.slac.stanford.edu/spires/hep/bibstyles.html">here</a>.
+You can use many other BibTeX style files, but the one listed above will
+handle correctly the 
+<a href="http://www.slac.stanford.edu/spires/hep/latex.html">citation</a>
+and eprint fields in the Spires output.</p><p>
+
+[3] prepare a simple file called, <i>e.g.,</i> mywork.tex. It should have the
+following form:
+</p><pre> 
+\documentclass[12pt]{article}   %or use your favorite doc class
+\renewcommand\refname{My Wonderful Publications}       %change as needed
+\providecommand{\href}[2]{#2}   %generates the href macro if needed
+\begin{document}
+   \nocite{*}                   %this uses *everything* in the .bib file
+   \bibliography{spires}        %or whatever your .bib file is
+   \bibliographystyle{utphys}   %if you use utphys.bst
+\end{document}   
+
+</pre>
+
+[4] to process the file, use several "latex" and "bibtex" commands. 
+Particularly, for the file named mywork.tex (above), do the following:
+<pre>
+latex mywork
+bibtex mywork
+latex mywork             (twice!)
+latex mywork
+
+</pre>
+ 
+[5] if everything worked well, you now have the mywork.dvi file that you
+can send to a printer or turn into a postscript file. Check and see
+what changes have to be done to the original .bib file (some titles and
+author names will likely have to be changed from the Spires ascii form to
+the real TeX markup). Redo step [4] if needed.<p>
+
+Acknowledgment: The instructions are based on Jacques Distler's
+suggestion. We are grateful for his interest and help! If you can refine the
+procedure (while still keeping it simple), please
+<a href="mailto: library@slac.stanford.edu">let us know</a>! 
+
+
+
+</p></body></html>
