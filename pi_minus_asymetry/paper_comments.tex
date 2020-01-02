@@ -1,31 +1,54 @@
 \documentclass{article}
+
+\newcommand{\itm}[1]{\item{\bf line #1:}}
+
 \begin{document}
 
 \section{Abstract}
 
-\begin{itemize}
-\item line 10: prefer ``...energy range $8.2 < E_\gamma < 8.8$~GeV."
-\item line 12: prefer ``...and compared to theoretical  models."
-\item line 17: ``Constraining production mechanisms...study of unconventional mesons." A statement more appropriate in the introduction and conclusions, perhaps not for the abstract. Is there another physics conclusion that should be emphasized here?
-\end{itemize}
+\begin{description}
+\itm{10} prefer ``...energy range $8.2 < E_\gamma < 8.8$~GeV."
+\itm{12} prefer ``...and compared to theoretical  models."
+\itm{17} ``Constraining production mechanisms...study of unconventional mesons." A statement more appropriate in the introduction and conclusions, perhaps not for the abstract. Is there another physics conclusion that should be emphasized here?
+\end{description}
 
 \section{Introduction}
 
-\begin{itemize}
-\item lines 20-44: Importance for hybrid searches should perhaps be shortened and put at the end of the introduction. It is a forward-looking observation but the not the direct subject of the paper.
-\item line 58: prefer ``...of the beam asymmetry $\Sigma$..."
-\item line 68: The electron is the incoming beam particle. Recoil does not seem appropriate to describe it. Perhaps ``post-radiative electron" or ``electrons that have radiated a significant amount of energy"
-\item line 69: ``tags" needs closing double quotes
-\item line 75: prefer ``...travel 75 m from the radiator and pass through..."
-\item line 80: remove from ``which utilizes..." through ``..quantum electrodynamics" including the equation. Unnecessary detail, and explained in the reference.
-\item line 84: prefer ``...with values of up to 40\%". Maximum value implies some sort of limit to my ear.
-\item line 94: prefer ``...two drift chamber systems". Just ``two drift chambers" could mean just two drift chambers.
-\item line 96: prefer ``...arranged in stereo and axial layers,..."
-\item line 97: prefer ``...at large polar angles and...". ``Larger" leads to the question: larger than what?
-\item line 98: prefer ``energy loss (dE/dx)". Without the parenthesis, it does not scan.
-\item line 99: prefer ``Each FDC plane consists of anode wire and cathode strips, both of which are read-out". Internally we call ``package" the set of six planes. ``Readout" applies to the anodes as well but as written could imply only cathodes are readout.
-\item line 105:  prefer replacement  of ``consists of" with ``is done with" 
-\item line 107: prefer replacement of ``immediately surrounds" with ``is located just outside"
-\end{itemize}
+\begin{description}
+\item{lines 20-44:} Importance for hybrid searches should perhaps be shortened and put at the end of the introduction. It is a forward-looking observation but the not the direct subject of the paper.
+\itm{58} prefer ``...of the beam asymmetry $\Sigma$..."
+\itm{68} The electron is the incoming beam particle. Recoil does not seem appropriate to describe it. Perhaps ``post-radiative electron" or ``electrons that have radiated a significant amount of energy"
+\itm{69} ``tags" needs closing double quotes
+\itm{75} prefer ``...travel 75 m from the radiator and pass through..."
+\itm{80} remove from ``which utilizes..." through ``..quantum electrodynamics" including the equation. Unnecessary detail, and explained in the reference.
+\itm{84} prefer ``...with values of up to 40\%". Maximum value implies some sort of limit to my ear.
+\itm{94} prefer ``...two drift chamber systems". Just ``two drift chambers" could mean just two drift chambers.
+\itm{96} prefer ``...arranged in stereo and axial layers,..."
+\itm{97} prefer ``...at large polar angles and...". ``Larger" leads to the question: larger than what?
+\itm{98} prefer ``energy loss (dE/dx)". Without the parenthesis, it does not scan.
+\itm{99} prefer ``Each FDC plane consists of anode wire and cathode strips, both of which are read-out". Internally we call ``package" the set of six planes. ``Readout" applies to the anodes as well but as written could imply only cathodes are readout.
+\itm{105} prefer replacement  of ``consists of" with ``is done with" 
+\itm{107} prefer replacement of ``immediately surrounds" with ``is located just outside"
+\itm{108} prefer ``provides polar angle coverage from $12^\circ$ to $120^\circ$''
+\itm{111} prefer ``for polar angles between $1^\circ$ and $11^\circ$.'' Also prefer ``triggered by roughly ?~GeV of energy deposition in the FCAL and/or BCAL elements.'' as long as such a state roughly correct.
+\end{description}
+
+\section{Event Selection}
+
+\begin{description}
+\itm{115} prefer ``A beam energy satisfying $8.2 < E_\gamma < 8.8$~GeV is chosen...''
+\itm{117} prefer ``...tracks extrapolate to the target volume...'' or ``...extrapolation of tracks intersect the target volume...''
+\itm{118} prefer ``both detectors give timing information that can be use for time-of-flight measurements,...'' The idea is to avoid possible confusion about whether the BCAL, when used in the same sentence as the TOF, is appropriate for time-of-flight.
+\itm{119} prefer ``required to be consistent with a proton or pion hypothesis as appropriate.''
+\itm{121} prefer ``For these cases, energy loss...''
+\itm{123} prefer ``matched to a suitable photon tagger hit yielding a photon energy measurement.''
+\itm{125} Are we sure that it is just the ST that provides the RF choice? I thought all particles with timing info contribute to the choice.
+\itm{126} prefer ``time of the bunch ($t_{\rm bunch}$) is provided...'' I.e., drop the ``denoted.''
+\itm{127} prefer ``We require electrons detected in the tagger to have a time...''
+\itm{129} prefer ``more than one electron is typically detected per event when in principle only one was associated with the beam photon of interest.''
+\itm{132} prefer ``...which, when scaled appropriately, can be used to statistically remove the contribution of these accidentals to the analysis.''
+\itm{136} prefer ``GeV$^2$'' over ``GeV$^2/c^4$''. The units of a four-vector squared are energy squared, no? Here we call it missing mass, but the units should match the variable in the inequality.
+\itm{139} ``A loose requirement'' is kind of vague. Perhaps ``The fit is required to have a $\chi^2$ probability of greater than 1.0$\times 10^{-?}$ (i.e., mere convergence) to ensure events are well reconstructed...'' (no hyphen in ``well reconstructed''). Or ``The fit is required to converge to ensure events...''
+\end{description}
 
 \end{document}
