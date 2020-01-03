@@ -1,4 +1,4 @@
-all: paper_comments.pdf
+all: paper_comments_mmi.pdf
 
 %.pdf: %.tex
 	pdflatex $*
