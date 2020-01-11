@@ -8,8 +8,8 @@ mywork.bbl : spires.bib mywork.aux
 
 mywork.pdf: mywork.bbl mywork.tex
 	cp -pv mywork.aux mywork.aux.tmp
-	pdflatex mywork
-	pdflatex mywork
+	pdflatex -interaction=nonstopmode mywork
+	pdflatex -interaction=nonstopmode mywork
 	if diff mywork.aux.tmp mywork.aux ; then mv -v mywork.aux.tmp mywork.aux ; fi
 
 clean:
