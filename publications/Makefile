@@ -1,3 +1,5 @@
+#NONSTOP =  -interaction=nonstopmode
+
 all: mywork.pdf
 
 mywork.aux: mywork.tex
@@ -8,8 +10,8 @@ mywork.bbl : spires.bib mywork.aux
 
 mywork.pdf: mywork.bbl mywork.tex
 	cp -pv mywork.aux mywork.aux.tmp
-	pdflatex -interaction=nonstopmode mywork
-	pdflatex -interaction=nonstopmode mywork
+	pdflatex $(NONSTOP) mywork
+	pdflatex $(NONSTOP) mywork
 	if diff mywork.aux.tmp mywork.aux ; then mv -v mywork.aux.tmp mywork.aux ; fi
 
 clean:
