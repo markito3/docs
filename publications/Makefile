@@ -1,4 +1,6 @@
-#NONSTOP =  -interaction=nonstopmode
+ifdef NONSTOP
+  PDFLATEX_OPTIONS = -interaction=nonstopmode
+endif
 
 all: mywork.pdf
 
@@ -10,8 +12,8 @@ mywork.bbl : spires.bib mywork.aux
 
 mywork.pdf: mywork.bbl mywork.tex
 	cp -pv mywork.aux mywork.aux.tmp
-	pdflatex $(NONSTOP) mywork
-	pdflatex $(NONSTOP) mywork
+	pdflatex $(PDFLATEX_OPTIONS) mywork
+	pdflatex $(PDFLATEX_OPTIONS) mywork
 	if diff mywork.aux.tmp mywork.aux ; then mv -v mywork.aux.tmp mywork.aux ; fi
 
 clean:
