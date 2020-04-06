@@ -17,4 +17,4 @@ mywork.pdf: mywork.bbl mywork.tex
 	if diff mywork.aux.tmp mywork.aux ; then mv -v mywork.aux.tmp mywork.aux ; fi
 
 clean:
-	$(RM) -v *.aux mywork.pdf *.log *.bbl *.blg *.dvi
+	$(RM) -v *.aux mywork.pdf *.log *.bbl *.blg *.dvi *.tmp
