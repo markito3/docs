@@ -2,6 +2,14 @@
 
 \begin{document}
 
+\begin{center}
+  {\Large Requirements for a Email List Server for JLab} \\
+  \medskip
+  {\large Mark Ito \\
+    May 5, 2020} \\
+  Version 1.1
+\end{center}
+
 \section{History}
 
 The standard Mailman software at JLab has worked well for us and does
@@ -18,11 +26,11 @@ easily dis-allow posting by non-members, and invite or add new
 members. Problem solved, we thought.
 
 On another front, we had had our collaborator Matt Shepherd
-maintaining a Hypernews site at Indiana University. It was used for
+maintaining a HyperNews site at Indiana University. It was used for
 private groups, to discuss papers in preparation for publication. It
 had all the right features for us, but the system admin overhead was a
 an issue, especially setting up new topics. He asked about
-transitioning this function to Googlegroups. Note that for the
+transitioning this function to GoogleGroups. Note that for the
 aforementioned software help list, we wanted to have all messages
 publicly readable on the Google Groups site. For these applications,
 the archive needed to be private. Fine. A private archive is no
@@ -49,10 +57,103 @@ experiences to illustrate requirement-related strengths and weakness
 we have seen. We will refer the the Mailman system as MM and
 GoogleGroups as GG in what follows.
 
+\subsection{Email Access}
 
+Almost goes without saying, but users need to have the ability to receive messages and post messages using email and email only. This is the tradition in the field.
 
+See the comment about Drupal in the history section above.
 
-\section{Options}
+\subsection{Archive}
+
+All products have an archive. Should be able to choose between public
+(readable by anyone) and private (authentication needed to read)
+archives.
+
+\subsection{Web Access}
+
+Not only should the archives be accessible via a web browser (which all products support), but there should be an ability to post new messages or reply to old ones via the web.
+
+\subsection{Subscriber Community}
+
+People from outside JLab need to be able to participate fully as subscribers and preferably as managers. One can assume subscribers have JLab CUE accounts for functions where authentication is necessary.
+
+\subsection{Search/Browse}
+
+Need facility so that
+
+\begin{itemize}
+  
+\item past conversions only vaguely remembered can be found.
+
+\item folks with questions can search to see if the question has
+  already been asked and answered.
+
+\item browsing through the history chronologically is supported.
+
+\end{itemize}
+
+GG is good for this, MM very poor.
+
+\subsection{Agile Deployment}
+
+When users want a new email list, they should be able to create one
+on-demand (with appropriate limits on creators) rather than waiting
+for CNI to act on a request. Same for deleting a list that was a bad
+idea.
+
+GG is good for this, MM not.
+
+\subsection{Group Management}
+
+Management of the email list should be do-able by a team of users, not
+a single individual. Here we mean subscription approval, removal of
+members, visibility settings, etc. This avoids problems with
+vacations, travel, and job changes of managers.
+
+\subsection{Authentication}
+
+It would be ideal if JLab credentials could be used to authenticate in
+cases where authentication is necessary. This way a separate
+access-control management task is finessed.
+
+\subsection{File Attachments}
+
+It should be possible to add attachments to posted messages. The big
+use case here is attachment of PDF files. Cyber security is a concern
+here.
+
+\subsection{System Administration}
+
+Being users, we would like CNI to be able to handle system
+configuration, backups, and upgrades.
+
+\section{Product List}
+
+At this writing this list is pretty minimal. Other ideas should
+certainly need to be explored. For completeness I listed the products
+we are trying to get away from.
+
+\begin{description}
+
+\item{\bf Mailman} See the discussion above.
+
+\item{\bf Google Groups} See the discussion above.
+
+\item{\bf HyperNews} See the discussion above. This is old and probably does not have active support.
+
+\item{\bf Drupal Forum} See the discussion above.
+
+\item{\bf Discourse} Hall B is already using the free version. The
+  Geant4 Collaboration has moved to Discourse after SLAC took down
+  their HyperNews site for security reasons.
+
+\item{\bf groups.io}
+
+\item{\bf Microsoft Teams}
+
+\item{\bf Slack} No email interface of which I am aware. Probably not a real candidate for that reason.
+
+\end{description}
 
 \end{document}
 
