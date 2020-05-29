@@ -1,0 +1,70 @@
+\documentclass[xcolor=dvipsnames,hyperref={pdfpagelabels=false},8pt]{beamer}
+
+\usetheme{Boadilla}
+
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+\newcommand{\bc}{\begin{center}}
+\newcommand{\ec}{\end{center}}
+\newcommand{\bd}{\begin{description}}
+\newcommand{\ed}{\end{description}}
+\newcommand{\I}{\item}
+\newcommand{\f}{\frame}
+\newcommand{\ft}{\frametitle}
+
+\title{NPP Acceptance Error}
+\subtitle{Gluex-doc 4513-v2}
+\author[Mark Ito]{Mark M.\ Ito}
+\date{May 29, 2020}
+\institute[JLab]{Jefferson Lab}
+
+\begin{document}
+
+\f{\titlepage}
+
+\f{\ft{Table 3: Uncertainties in the extraction of $\pi^0$ polarizabilities $\alpha_{\pi^0} - \beta_{\pi^0}$}
+  \begin{center}
+  \begin{tabular}{|l|l|c|c|}
+\hline
+\hline
+  &  Source  & Uncertainty   \\  \hline \hline
+  1 & Statistical uncertainty  &  2.3 \%    \\ \hline
+  2 & Flux normalization &  1.5 \%     \\ \hline
+  3 & Signal extraction  & 3.0 \%  \\ \hline
+  4 & Detector acceptance and efficiency &  3.5 \%   \\ \hline
+  5 & Total systematic error  &  4.8\% \\ \hline
+  6 & Total error on cross section  &  5.3\% \\ \hline
+  7 & Projected error in $\alpha - \beta$ &  41\%  \\ 
+ \hline
+ \hline
+  \end{tabular}
+  \end{center}
+  
+\bigskip
+
+4. Detector acceptance and efficiency. We can measure the detector acceptance times efficiency for the process $\gamma \mathrm{Pb} \rightarrow \pi^0 \mathrm{Pb}$ with an accuracy of 3.5\% (Section~6.2), which
+should allow us to reduce the systematic uncertainty in the acceptance calculation for the process of interest to this level.
+
+}
+
+\f{\ft{Section 6.2: Cross section verification with the exclusive single $\pi^0$ photo-production (Ilya Larin)}
+  \begin{tabular}{|r|p{0.7in}|c|c|p{2in}|}
+    \hline\hline
+Item & Description   &  PrimEx $\pi^0$ & NPP $\pi^0$ &  Comment \\ \hline\hline
+1 & Stat.\ error &      2.5\% &  1.0\%    &         differences from geometry and flux, Pb only \\ \hline
+2 & Syst.\ error   &      2.1\% &           & Pb only, (PrimEx 2a) + (PrimEx 2b) \\ \hline
+2a & Yield extraction syst.&       1.6\% &    &    partly statistics driven, should be slightly worse for NPP because of FCAL resolution vs. HyCal resolution and because of no charged particle sweep for NPP\\ \hline
+2b & Beam flux accounting syst.&   1.0\%   & &                  will cancel out for NPP\\ \hline
+3 & Total error (stat.\ + sys.) &  &  2.5-3.5\% & (NPP 1) + (PrimEx 2a) \\ \hline
+4 & Total error on $\pi^0$ radiative width & 1.5\% & & all targets (C, Pb, Sn)\\ \hline\hline
+\end{tabular}
+
+\medskip
+
+Flux normalization error for NPP 2$\pi^0$  = (NPP 3) + (PrimEx 4) = 3.0-4.0\%
+
+}
+
+\end{document}
