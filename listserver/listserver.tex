@@ -7,7 +7,7 @@
   \medskip
   {\large Mark Ito \\
     June 4, 2020} \\
-  GlueX-doc 4522-v2
+  GlueX-doc 4522-v3
 \end{center}
 
 \section{History}
@@ -28,26 +28,30 @@ members. Problem solved, we thought.
 On another front, we had had our collaborator Matt Shepherd
 maintaining a HyperNews site at Indiana University. It was used for
 private groups, to discuss papers in preparation for publication. It
-had all the right features for us, but the system admin overhead was a
+had all the right features for us, but the system admin overhead was
 an issue, especially setting up new topics. He asked about
 transitioning this function to GoogleGroups. Note that for the
 aforementioned software help list, we wanted to have all messages
-publicly readable on the Google Groups site. For these applications,
+publicly readable on the Google Groups site. For these paper discussions,
 the archive needed to be private. Fine. A private archive is no
-problem on Google Groups. The problem was that to read the archive on
-the web, you had to authenticate to Google, and so you needed to use a
+problem on Google Groups. The problem we did run into was that to read
+the archive on
+the web, you had to authenticate to Google, therefore you needed to use a
 Google account. Some people objected to using their private Google
-account for work related business, plus there were objections on
-privacy grounds. We had a work around where we told people about the
-administrative google account (group owner account), including the
+account for work related business, or objected to having to create yet
+another account, plus there were objections on
+Google-specific privacy grounds.
+We had a work around where we told people about the
+group owner account Google account, including the
 password. This would allow reading, but this had its own problems,
 some obvious and some to be mentioned below. Also we started to notice
 conflicts in privilege settings with at universities using GSuite that
 would require action by the university's GSuite administrator to
 solve.
 
-Lately, more of us would like to administer a private group, but that
-has turned out to be an expert-only operation. So we are looking for
+Lately, more of us would like to administer a private Google group, but that
+has turned out to be an semi-expert-only operation.Group administration has
+a not insignificant learning curve. So we are looking for
 other solutions.
 
 \section{Requirements}
@@ -59,7 +63,9 @@ GoogleGroups as GG in what follows.
 
 \subsection{Email Access}
 
-Almost goes without saying, but users need to have the ability to receive messages and post messages using email and email only. This is the tradition in the field.
+Almost goes without saying, but users need to have the ability to
+receive messages and post messages using email and email only. This is
+the tradition in the field.
 
 See the comment about Drupal in the history section above.
 
@@ -71,11 +77,16 @@ archives.
 
 \subsection{Web Access}
 
-Not only should the archives be accessible via a web browser (which all products support), but there should be an ability to post new messages or reply to old ones via the web.
+Not only should the archives be accessible via a web browser (which
+all products support), but there should be an ability to post new
+messages or reply to old ones via the web.
 
 \subsection{Subscriber Community}
 
-People from outside JLab need to be able to participate fully as subscribers and preferably as managers. One can assume subscribers have JLab CUE accounts for functions where authentication is necessary.
+People from outside JLab need to be able to participate fully as
+subscribers and preferably as managers. One can assume subscribers
+have JLab CUE accounts for functions where authentication is
+necessary.
 
 \subsection{Search/Browse}
 
