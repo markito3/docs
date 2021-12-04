@@ -4,6 +4,8 @@ import sys
 from xml.dom.minidom import parse
 import xml.dom.minidom
 
+inputFile = sys.argv[1]
+
 # constants
 
 secondsPerDay = 24.*60.*60.
@@ -33,7 +35,7 @@ simulatedPerRawEventUnitsExpected = 'dl'
 
 # inputs
 
-DOMTree = xml.dom.minidom.parse("inputs.xml")
+DOMTree = xml.dom.minidom.parse(inputFile)
 compMod = DOMTree.documentElement
 parameters=compMod.getElementsByTagName("parameter")
 for parameter in parameters:
