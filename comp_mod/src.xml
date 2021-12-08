@@ -1,0 +1,18 @@
+<compMod>
+<parameter name="triggerRate" value="50e3" units="Hz"/>
+<parameter name="runningTimeOnFloor" value="63" units="days"/>
+<parameter name="runningEfficiency" value="0.50" units="dl"/>
+<parameter name="eventsize" value="13.0" units="kB"/>
+<parameter name="RESTfraction" value="0.15" units="dl"/>
+<parameter name="timePeriod" value="12.0" units="months"/>
+<parameter name="cores" value="3000" units="dl"/>
+
+<parameter name="reconstructionRate" value="5.5" units="Hz"/>
+<parameter name="reconPasses" value="2.0" units="dl"/>
+<parameter name="goodRunFraction" value="0.85" units="dl"/>
+
+<parameter name="simulationRate" value="25" units="Hz"/>
+<parameter name="simulationpasses" value="2" units="dl"/>
+<parameter name="simulatedPerRawEvent" value="0.4" units="dl"/>
+</compMod>
+
