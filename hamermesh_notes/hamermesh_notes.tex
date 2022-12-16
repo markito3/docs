@@ -6,8 +6,27 @@
 
 \chapter{Elements of Group Theory}
 
-\section{1.1 placeholder}
-\section{Groups}
+\section{Correspondences and transformations.}
+
+{\bf p.\ 3}: A restatement with a cyclic permutation:
+$$
+\genfrac(){0pt}0{1234}{2341}
+$$
+means that the object in box 1 goes to box 2, the object in box 2 goes to box 3, {\it etc}. The numbers refer to the boxes and not the objects. In this notation the order of the columns is irrelevant, i.e.,
+$$
+\genfrac(){0pt}0{1324}{2431}
+$$
+is the same permutation.  If the objects were identified as A, B, C,
+and D and start out in boxes 1, 2, 3, and 4 respectively,
+$$
+\genfrac{}{}{0pt}0{\tt 1234}{\tt ABCD}
+$$
+after application of the permutaion the box/object arrangement ends up as
+$$
+\genfrac{}{}{0pt}0{\tt 1234}{\tt DABC}
+$$
+
+\section{Groups. Definitions and examples.}
 
 By a group of tranformations, $G$, we mean an aggregate of transformations of a given point set which
 \begin{enumerate}
@@ -17,6 +36,37 @@ By a group of tranformations, $G$, we mean an aggregate of transformations of a 
 \end{enumerate}
 
 [Rather than transformation, could use elements. Rather than composite, could use result of the group operation.]
+
+p.\ 12: (13)(12) should be intepreted as a transformation where first (12) is applied followed by (13). An example:
+$$
+\genfrac(){0pt}0{123}{231}
+$$
+is a cyclic permutation. If we start with box/objects
+$$
+\genfrac{}{}{0pt}0{\tt 123}{\tt ABC}
+$$
+then application of this permutation gives
+$$
+\genfrac{}{}{0pt}0{\tt 123}{\tt CAB}
+$$
+which is equivalant to applying the transposition (13), which gives
+$$
+\genfrac{}{}{0pt}0{\tt 123}{\tt CBA},
+$$
+followed by (23), which gives
+$$
+\genfrac{}{}{0pt}0{\tt 123}{\tt CAB},
+$$
+and is also equivalant to applying the transposition (12), which gives
+$$
+\genfrac{}{}{0pt}0{\tt 123}{\tt BAC},
+$$
+followed by (13), which gives
+$$
+\genfrac{}{}{0pt}0{\tt 123}{\tt CAB}.
+$$
+
+A nice page with examples of cycles: https://math.stackexchange.com/questions/319979/how-to-write-permutations-as-product-of-disjoint-cycles-and-transpositions .
 
 \section{Subgroups. Cayley's theorem}
 
