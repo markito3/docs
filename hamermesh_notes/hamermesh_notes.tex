@@ -37,7 +37,7 @@ By a group of tranformations, $G$, we mean an aggregate of transformations of a 
 
 [Rather than transformation, could use elements. Rather than composite, could use result of the group operation.]
 
-p.\ 12: (13)(12) should be intepreted as a transformation where first (12) is applied followed by (13). An example:
+{\bf p.\ 12}: (13)(12) should be intepreted as a transformation where first (12) is applied followed by (13). An example:
 $$
 \genfrac(){0pt}0{123}{231}
 $$
@@ -65,8 +65,28 @@ followed by (13), which gives
 $$
 \genfrac{}{}{0pt}0{\tt 123}{\tt CAB}.
 $$
+This is not the same as (13) followed by (12), which gives
+$$
+\genfrac{}{}{0pt}0{\tt 123}{\tt BCA}.
+$$
 
 A nice page with examples of cycles: https://math.stackexchange.com/questions/319979/how-to-write-permutations-as-product-of-disjoint-cycles-and-transpositions .
+
+{\bf p.\ 14}: Call (a...xb...y) ``the cycle.'' Ignoring other possible independent cycles, we start with
+$$
+\genfrac{}{}{0pt}0{\tt 123456}{\tt ABCDEF},
+$$
+thus assuming $a=1$, $x=3$, $b=4$, and $y=6$. Applying the cycle we get
+$$
+\genfrac{}{}{0pt}0{\tt 123456}{\tt FABCDE}.
+$$
+Now apply (ab), aka (14). We get
+$$
+\genfrac{}{}{0pt}0{\tt 123456}{\tt CABFDE}.
+$$
+so this looks like (123)(456). More generally, the cycle puts $x \to
+b$ and $y \to a$. So subsequent application of (ab) puts $x \to a$ and
+$y \to b$ resulting in (a..x)(b...y)
 
 \section{Subgroups. Cayley's theorem}
 
