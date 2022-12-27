@@ -12,7 +12,10 @@
 $$
 \genfrac(){0pt}0{1234}{2341}
 $$
-means that the object in box 1 goes to box 2, the object in box 2 goes to box 3, {\it etc}. The numbers refer to the boxes and not the objects. In this notation the order of the columns is irrelevant, i.e.,
+means that the object in box 1 goes to box 2, the object in box 2 goes
+to box 3, {\it etc}. The numbers refer to the boxes and not the
+objects. In this notation the order of the columns is irrelevant,
+i.e.,
 $$
 \genfrac(){0pt}0{1324}{2431}
 $$
@@ -28,16 +31,19 @@ $$
 
 \section{Groups. Definitions and examples.}
 
-By a group of tranformations, $G$, we mean an aggregate of transformations of a given point set which
+By a group of tranformations, $G$, we mean an aggregate of
+transformations of a given point set which
 \begin{enumerate}
 \item contains the identity transformation;
 \item for every transformation $M$, also contains its inverse $M^{-1}$;
 \item if it includes $M$ and $M^\prime$, also includes ther composite $MM^\prime$.
 \end{enumerate}
 
-[Rather than transformation, could use elements. Rather than composite, could use result of the group operation.]
+[Rather than transformation, could use elements. Rather than
+  composite, could use result of the group operation.]
 
-{\bf p.\ 12}: (13)(12) should be intepreted as a transformation where first (12) is applied followed by (13). An example:
+{\bf p.\ 12}: (13)(12) should be intepreted as a transformation where
+first (12) is applied followed by (13). An example:
 $$
 \genfrac(){0pt}0{123}{231}
 $$
@@ -70,9 +76,12 @@ $$
 \genfrac{}{}{0pt}0{\tt 123}{\tt BCA}.
 $$
 
-A nice page with examples of cycles: https://math.stackexchange.com/questions/319979/how-to-write-permutations-as-product-of-disjoint-cycles-and-transpositions .
+A nice page with examples of cycles:
+https://math.stackexchange.com/questions/319979/how-to-write-permutations-as-product-of-disjoint-cycles-and-transpositions
+.
 
-{\bf p.\ 14}: Call (a...xb...y) ``the cycle.'' Ignoring other possible independent cycles, we start with
+{\bf p.\ 14}: Call (a...xb...y) ``the cycle.'' Ignoring other possible
+independent cycles, we start with
 $$
 \genfrac{}{}{0pt}0{\tt 123456}{\tt ABCDEF},
 $$
@@ -84,9 +93,18 @@ Now apply (ab), aka (14). We get
 $$
 \genfrac{}{}{0pt}0{\tt 123456}{\tt CABFDE}.
 $$
-so this looks like (123)(456). More generally, the cycle puts $x \to
-b$ and $y \to a$. So subsequent application of (ab) puts $x \to a$ and
-$y \to b$ resulting in (a..x)(b...y)
+so this looks like (123)(456).
+
+More generally, the cycle moves all objects to the next box, and in
+particular the object in box $x$ moves to box $b$ and the object in
+box $y$ moves to box $a$. So subsequent application of (ab) puts the
+object that started in box $x$ into box $a$ and the object that
+started in box $y$ into box $b$. The net effect is that objects in
+boxes $a,...,x$ cycle among themselves. Likewise for the ojbect in
+boxes $b,...,y$. I.e.,
+$$
+(ab)(a...xb...y) = (a...x)(b...y).
+$$
 
 \section{Subgroups. Cayley's theorem}
 
