@@ -1,6 +1,7 @@
 \documentclass{book}
 
 \usepackage{amsmath}
+\usepackage{hyperref}
 
 \begin{document}
 
@@ -118,6 +119,18 @@ p. 15: Since the product of any pair of elements of $\mathcal H$ are
 in $\mathcal H$ and each element of $\mathcal H$ contains its inverse,
 for any element $a$ in $\mathcal H$, $aa^{-1} = e$ says that $e$ is an
 element of $\mathcal H$.
+
+p.\ 17: Stated in the text: $ba_i = ba_j$ means $a_i = a_j$. The
+result of both sides in the premise must be members of the group. The
+statement is that they cannot result in the same member if $a_i$ and
+$a_j$ are distinct members of the group. QUESTION: why? ANSWER:
+\href{https://planetmath.org/uniquenessofinverseforgroups}{Inverses
+  are unique}. Assume that $ba_i = ba_j$ and $a_i \neq a_j$. Then
+$a^{-1}_i b^{-1} = a^{-1}_j b^{-1}$, and $a^{-1}_i b^{-1} b = a^{-1}_j
+b^{-1} b$. So $a^{-1}_i = a^{-1}_j$ and since inverses are unique $a_i
+= a_j$ which contradicts the assumption. So if $a_i \neq a_j$ then
+$ba_i \neq ba_j$.
+
 
 \section{1.4 placeholder}
 
