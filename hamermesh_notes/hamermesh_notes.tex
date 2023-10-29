@@ -227,6 +227,45 @@ The cyclic groups are \href{https://en.wikipedia.org/wiki/Cyclic_group}{defined 
 Every finite cyclic group of order $n$ is isomorphic to the additive group of $Z/nZ$, the integers modulo n.
 \end{quote}
 
+% group of order 6 discussion
+
+Lagrange's theorem can be used for finding the possible structures of
+groups of a given order. As an example we find all structures of
+order 6. Since the order of the group is six the order of each of its
+elements is a divisor of 6 i.e., 1, 2, 3 or 6. If the group contains an element
+$a$ of order 6 then the group is the cyclic group $a,a^2,...,a^6 = e$.
+To find other possible structures, we suppose that the group
+contains no element of order 6, but has an element $a$ of order
+3. Thus the group contains the subgroup $a,a^2,a^3 = e$.
+If the group also contains another element, $b$, then it contains the
+six distinct elements $e,a,a^2,b,ba,ba^2$. The element
+$b$ has order two or three. If the order of $b$ is 3, that is, $b^3 = e$,
+the element $b^2$ must be one of the six elements listed.
+We cannot have $b^2 = e$ (since we assumed that $b$ is of
+order 3), and $b^2 = b, ba$, or $ba^2$ implies $b
+= e, a$, or $a^2$, respectively, which contradicts our
+assumption that $b$ is distinct from these elements. Furthermore
+$b^2 = a$ implies $ba = e$, and $b^2 = a^2$ implies $ba = e$,
+both of which contradict our assumptions. Thus the order of $b$
+cannot be 3 and we must have $b^2 = e$. The product $ab$ cannot
+be $e, a, a^2$, or $b$. If $ab = ba$ then
+\begin{multline}
+(ab)^2 = (ab)(ab) = (ab)ba = ab^2a = a^2, \\
+(ab)^3 = a^2(ab) - b; (ab^4 = a, (ab)^5 = ba^2, (ab^6) = e,
+\end{multline}
+And therefore the group would contain an element $ab$ of order 6
+contrary to assumption. (This can be done more briefly: $a$ is of order
+2, $b$ of order 3, and $ab = ba$, that is, $a$ and $b$ commute. Taking powers
+we see that the order of $ab$ is the least common multiple of the
+orders of $a$ and $b$.) We are now left with
+$$
+b^2 = e, ab = ba^2
+$$
+$ab = ba^2$ implies $(ab)^2 = (ab)ba^2 = e$.
+
+This last assumption leads to no contradictions.
+
+
 \section{Conjugate classes.}
 
 \section{Invariant subgroups. Factor group. Homomorphism}
