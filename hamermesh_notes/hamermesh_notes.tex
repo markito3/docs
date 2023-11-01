@@ -2,6 +2,7 @@
 
 \usepackage{amsmath}
 \usepackage{hyperref}
+\usepackage[marginparwidth=0pt]{geometry}
 
 \begin{document}
 
@@ -251,20 +252,19 @@ cannot be 3 and we must have $b^2 = e$. The product $ab$ cannot
 be $e, a, a^2$, or $b$. If $ab = ba$ then
 \begin{multline}
 (ab)^2 = (ab)(ab) = (ab)ba = ab^2a = a^2, \\
-(ab)^3 = a^2(ab) - b; (ab^4 = a, (ab)^5 = ba^2, (ab^6) = e,
+(ab)^3 = a^2(ab) = b; (ab)^4 = a, (ab)^5 = ba^2, (ab^6) = e,
 \end{multline}
-And therefore the group would contain an element $ab$ of order 6
+and therefore the group would contain an element $ab$ of order 6
 contrary to assumption. (This can be done more briefly: $a$ is of order
 2, $b$ of order 3, and $ab = ba$, that is, $a$ and $b$ commute. Taking powers
 we see that the order of $ab$ is the least common multiple of the
 orders of $a$ and $b$.) We are now left with
 $$
-b^2 = e, ab = ba^2
+b^2 = e, ab = ba^2;
 $$
 $ab = ba^2$ implies $(ab)^2 = (ab)ba^2 = e$.
 
 This last assumption leads to no contradictions.
-
 
 \section{Conjugate classes.}
 
