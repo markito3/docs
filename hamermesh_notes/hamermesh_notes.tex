@@ -249,7 +249,18 @@ contains no element of order 6, but has an element $a$ of order
 $a$ cannot be $e$ since $a^2 = e$ and $a$ is a member of a group of order 1. $a^2$ cannot be $e$ otherwise $aa^2 = a^3$ would be equal to $a$ and thus $a$ and $a^3$ would not be distinct.
 \end{quote}
 If the group also contains another element, $b$, then it contains the
-six distinct elements $e,a,a^2,b,ba,ba^2$. ?Why must they be distinct? The element
+six distinct elements $e,a,a^2,b,ba,ba^2$.
+\begin{quote}
+  $b$ is distinct from $e,a,a^2$ by assumption. $ba$ is distinct from
+  $b$ since $a$ is not the identity and is distinct from $a$ since $b$
+  is not the identity. $ba$ is distinct from $e$ because that would
+  imply that $b = a^{-1}$ but $a^{-1} = a^2$ which $b$ is distinct
+  from $a^2$ by assumption. $ba$ is distinct from $a^2$ since that
+  would imply that $b = a$, which is false by assumption. Similar
+  arguments for the $ba^2$ being distinct from the other five
+  elements.
+\end{quote}
+The element
 $b$ has order two or three. If the order of $b$ is 3, that is, $b^3 = e$,
 the element $b^2$ must be one of the six elements listed.
 We cannot have $b^2 = e$ (since we assumed that $b$ is of
