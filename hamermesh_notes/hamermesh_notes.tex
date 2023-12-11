@@ -240,13 +240,16 @@ If an element $a$ is of order $n$ then the group elements $a,a^2,...,a^n$ are di
 If the group contains an element
 $a$ of order 6 then the group is the cyclic group $a,a^2,...,a^6 = e$.
 \begin{quote}
-This subgroup has the same structure as the cyclic group, so it is in fact the cyclic group.
+This subgroup has the same structure as the cyclic group, so it is in
+fact the cyclic group.
 \end{quote}
 To find other possible structures, we suppose that the group
 contains no element of order 6, but has an element $a$ of order
 3. Thus the group contains the subgroup $a,a^2,a^3 = e$.
 \begin{quote}
-$a$ cannot be $e$ since $a^2 = e$ and $a$ is a member of a group of order 1. $a^2$ cannot be $e$ otherwise $aa^2 = a^3$ would be equal to $a$ and thus $a$ and $a^3$ would not be distinct.
+  $a$ cannot be $e$ since $a^2 = e$ and $a$ is a member of a group of
+  order 1. $a^2$ cannot be $e$ otherwise $aa^2 = a^3$ would be equal
+  to $a$ and thus $a$ and $a^3$ would not be distinct.
 \end{quote}
 If the group also contains another element, $b$, then it contains the
 six distinct elements $e,a,a^2,b,ba,ba^2$.
@@ -254,14 +257,20 @@ six distinct elements $e,a,a^2,b,ba,ba^2$.
   $b$ is distinct from $e,a,a^2$ by assumption. $ba$ is distinct from
   $b$ since $a$ is not the identity and is distinct from $a$ since $b$
   is not the identity. $ba$ is distinct from $e$ because that would
-  imply that $b = a^{-1}$ but $a^{-1} = a^2$ which $b$ is distinct
+  imply that $b = a^{-1}$ but $a^{-1} = a^2$ and $b$ is distinct
   from $a^2$ by assumption. $ba$ is distinct from $a^2$ since that
   would imply that $b = a$, which is false by assumption. Similar
   arguments for the $ba^2$ being distinct from the other five
   elements.
 \end{quote}
 The element
-$b$ has order two or three. If the order of $b$ is 3, that is, $b^3 = e$,
+$b$ has order two or three.
+\begin{quote}
+  It cannot be of order one since it is distinct from the identity by
+  assumption. It cannot be order six since we have assumed that there
+  is no element of order 6.
+\end{quote}
+If the order of $b$ is 3, that is, $b^3 = e$,
 the element $b^2$ must be one of the six elements listed.
 We cannot have $b^2 = e$ (since we assumed that $b$ is of
 order 3), and $b^2 = b, ba$, or $ba^2$ implies $b
