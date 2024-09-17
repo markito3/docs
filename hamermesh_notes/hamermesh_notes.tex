@@ -89,7 +89,8 @@ and $bc = a$. Note that the four group has three elements (a, b, and
 c) of order 2, and one element (e) of order 1. So none of the elements
 of this group of order 4 is of order 4.
 
-{\bf p.\ 12}. The permutations of degree $n$ form a group called the {\it symmetric group} of degree $n$, denoted by $S_n$.
+{\bf p.\ 12}. The permutations of degree $n$ form a group called the
+{\it symmetric group} of degree $n$, denoted by $S_n$.
 
 {\bf p.\ 13}: (13)(12) should be intepreted as a transformation where
 first (12) is applied followed by (13). An example:
@@ -163,7 +164,8 @@ group. These are improper subgroups, as opposed to proper subgroups.
 
 The subgroup must use same group operation as the group.
 
-p. 15: An improper subgroup is the either the identity element alone or the whole group. Other subgroups are proper.
+p. 15: An improper subgroup is the either the identity element alone
+or the whole group. Other subgroups are proper.
 
 p. 15: Since the product of any pair of elements of $\mathcal H$ are
 in $\mathcal H$ and each element of $\mathcal H$ contains its inverse,
@@ -222,10 +224,13 @@ $a,a^2,...,a^n$ are all distinct. So these powers of $a$ form a group
 of order $n$. I.e., if $a$ is an element of order $n$, it is a member
 of a subgroup of $G$ of order $n$.
 
-The cyclic groups are \href{https://en.wikipedia.org/wiki/Cyclic_group}{defined on Wikipedia}. From that article:
+The cyclic groups are
+\href{https://en.wikipedia.org/wiki/Cyclic_group}{defined on
+  Wikipedia}. From that article:
 
 \begin{quote}
-Every finite cyclic group of order $n$ is isomorphic to the additive group of $Z/nZ$, the integers modulo n.
+Every finite cyclic group of order $n$ is isomorphic to the additive
+group of $Z/nZ$, the integers modulo n.
 \end{quote}
 
 % group of order 6 discussion
@@ -235,7 +240,9 @@ groups of a given order. As an example we find all structures of
 order 6. Since the order of the group is six the order of each of its
 elements is a divisor of 6 i.e., 1, 2, 3 or 6.
 \begin{quote}
-If an element $a$ is of order $n$ then the group elements $a,a^2,...,a^n$ are distinct and form a subgroup of order $n$. By Lagrange's theorem, $n$ must be a divisor of 6.
+If an element $a$ is of order $n$ then the group elements
+$a,a^2,...,a^n$ are distinct and form a subgroup of order $n$. By
+Lagrange's theorem, $n$ must be a divisor of 6.
 \end{quote}
 If the group contains an element
 $a$ of order 6 then the group is the cyclic group $a,a^2,...,a^6 = e$.
@@ -296,7 +303,8 @@ $ab = ba^2$ implies $(ab)^2 = (ab)ba^2 = e$.
 
 This last assumption leads to no contradictions.
 
-[Abandoning explanation of how Lagrange's theorem tells us the structure of groups of order 6.]
+[Abandoning explanation of how Lagrange's theorem tells us the
+  structure of groups of order 6.]
 
 \section{Conjugate classes.}
 
@@ -304,20 +312,32 @@ Q: For any given group element $a$, does the group contain $a^{-1}$?
 
 A: Yes. It is property (2) of the definition of a group, p.\ 6.
 
-{\bf Definition}: A conjugate class is a subset of a group such that all members are conjugate to one another.
+{\bf Definition}: A conjugate class is a subset of a group such that
+all members are conjugate to one another.
 \begin{itemize}
-  \item The transforming group element may or may not be a member of the class per this definition.
+  \item The transforming group element may or may not be a member of
+    the class per this definition.
   \item For abelian grounps, each element of the group forms a class by itself.
   \item On p.\ 23, $\equiv$ is read ``conjugate to.''
 \end{itemize}
 
-Comment, top of p.\ 24, ``all elements in the same class have the same order'': If the order of $a$ is $h$, then by definition no lower power of $h$ gives $e$. So no lower power of $ubu^{-1}$ gives $e$ either. So no lower power of $b$ gives $e$. So $b$ is of order $h$ as well.
+Comment, top of p.\ 24, ``all elements in the same class have the same
+order'': If the order of $a$ is $h$, then by definition no lower power
+of $h$ gives $e$. So no lower power of $ubu^{-1}$ gives $e$ either. So
+no lower power of $b$ gives $e$. So $b$ is of order $h$ as well.
 
-Example, p.\ 24: $a$ is a reflection in plane $P$, $c$ is the rotation about some axis, $x$ is a point in $P$. $a$ leaves $x$ invariant, i.e., $ax = x$.
+Example, p.\ 24: $a$ is a reflection in plane $P$, $c$ is the rotation
+about some axis, $x$ is a point in $P$. $a$ leaves $x$ invariant,
+i.e., $ax = x$.
 $$
 (cac^{-1})(cx) = cax = cx
-$$
-because of the properties of inverses and the invariance of $x$ when transformed by $a$. So $cx$ is invariant with respect to the transformation $cac^{-1}$. $cx$ is in the plane resulting from applying the rotation $c$ to the plane $P$, i.e., it is in the rotated $P$. The text claims that $cac^{-1}$ is therefore the reflection in the rotated plane $P$. Don't see why that has to be true based on a conclusion about points $x$ in the plane $P$.
+$$ because of the properties of inverses and the invariance of $x$
+when transformed by $a$. So $cx$ is invariant with respect to the
+transformation $cac^{-1}$. $cx$ is in the plane resulting from
+applying the rotation $c$ to the plane $P$, i.e., it is in the rotated
+$P$. The text claims that $cac^{-1}$ is therefore the reflection in
+the rotated plane $P$. Don't see why that has to be true based on a
+conclusion about points $x$ in the plane $P$.
 
 {\bf The procedure works equally well...} (p.\ 25). The ``procedure''
 is to apply $b$ lexically to $a$. In the example, the first move in $b$
@@ -343,7 +363,8 @@ $G$ may have the same image in $G^\prime$. [Example: cyclic group of
 
 \section{Direct Products}
 
-A group $G$ is said to be a direct product of its subgroups ${\mathcal H_{\rm 1},...,H_{\rm n}}$ if:
+A group $G$ is said to be a direct product of its subgroups ${\mathcal
+  H_{\rm 1},...,H_{\rm n}}$ if:
 
 \begin{enumerate}
 \item The elements of different subgroups commute.
@@ -368,8 +389,8 @@ another to give members of the same set. Such a set is called a {\it
 If $\bx$ and $\by$ are in $L$, then
 $$
 \alpha{\mathbf x} \quad {\rm and} \quad {\bx+\by = \by+\bx}
-$$
-are also in $L$. The ``multiplication'' and ``addition'' must satisfy the conditions:
+$$ are also in $L$. The ``multiplication'' and ``addition'' must
+satisfy the conditions:
 $$(\alpha + \beta)\bx = \alpha\bx + \beta\bx,$$
 $$(\alpha\beta)\bx = \alpha(\beta\bx),$$
 $$1\bx = \bx,$$
