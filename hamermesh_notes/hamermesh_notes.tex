@@ -134,6 +134,12 @@ A nice page with examples of cycles:
 https://math.stackexchange.com/questions/319979/how-to-write-permutations-as-product-of-disjoint-cycles-and-transpositions
 .
 
+{\bf Uniqueness of representation of a cycle by transpositions}
+(p.\ 13). They are not unique. The number of transpositions can vary
+and even with a given number of transpositions, the representation is
+not unique. Example: (123) = (13)(12) = (12)(23). The first
+representation is the one called out in the text.
+
 {\bf p.\ 14}: Call (a...xb...y) ``the cycle.'' Ignoring other possible
 independent cycles, we start with
 $$
@@ -163,12 +169,6 @@ $$
 For an example of a cycle broken into transpositions see
 example\_cycle\_to\_transpositions.pdf.
 
-{\bf Uniqueness of representation of a cycle by transpositions}
-(p.\ 13). They are not unique. The number of transpositions can vary
-and even with a given number of transpositions, the representation is
-not unique. Example: (123) = (13)(12) = (12)(23). The first
-representation is the one called out in the text.
-
 {\bf Decrement of a permutation} (p.\ 14) The difference of these
 numbers, $7-3 = 4$, is called the decrement of the permutation. (In
 this case the permutation is $(123)(45)(67)$ where 7 is the number of
@@ -178,9 +178,34 @@ notation, which in the general case includes single-member cycles.)
 {\bf Even and odd permutations} (p.\ 14) Permutations with even (odd)
 decrement are said to be even (odd) permutations.
 
-Proof (p.\ 14) The reader should supply the proof that if the
+{\bf Proof} (p.\ 14) The reader should supply the proof that if the
 decrement of a permutation is even (odd), its resolution into a product
 of transpositions will have an even (odd) number of factors.
+\begin{itemize}
+\item A cycle on $n$ elements is a product ot $n-1$ transpositions.
+  \begin{itemize}
+  \item on (1), 0 transpositions
+  \item on (12), (12) or 1 transposition
+  \item on (123), (13)(12) or 2 transpositions
+  \end{itemize}
+\item Each cycle of an odd(even) number of members contributes an
+  even(odd) number of transpositions
+\item If the number of independent cycles has $m$ even-membered cycles
+  and $n$ odd-membered cycles then the number of transpositions needed
+  is even or odd as $m$ is even or odd because the even-membered
+  cycles contribution an odd number of transpositions.
+\item If the total number oe elements $N$ is even (odd), then the
+  number of odd-membered cycles ($n$) must be even (odd).
+\item By definition, the decrement $d = N-(m+n)$
+\item Assume $N$ is odd. Then $n$ is odd. If $m$ is even, $d$ is
+  even. If $m$ is odd, $d$ is odd. So $d$ is even or odd as is the
+  number of transpositions.
+\item Assume $N$ is even. Then $n$ is even. The same reasoning as
+  above gives $d$ even or odd as the number of transpositions is even
+  or odd for this case as well.
+\item $d$ is even or odd as the number of transpositions is even or
+  odd for all cases. QED.
+\end{itemize}
 
 \section{Subgroups. Cayley's theorem}
 
