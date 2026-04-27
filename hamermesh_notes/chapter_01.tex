@@ -392,8 +392,44 @@ all members are conjugate to one another.
   \item On p.\ 23, $\equiv$ is read ``is conjugate to.''
 \end{itemize}
 
-Comment, top of p.\ 24, ``all elements in the same class have the same
-order'': If the order of $a$ is $h$, then by definition no lower power
+{\bf Gemini on classes.} Is it true that, in group theory, if a member
+of a class is transformed by any other member of the the group, the
+results is also a member of the class?
+
+Yes, that is correct.
+
+In group theory, a conjugacy class is specifically defined this
+way. If you take an element $a$ from a class and ``transform" it
+(conjugate it) by any element $g$ in the group—-calculated as
+$gag^{-1}$--the resulting element will always belong to that same
+class.  Essentially, a class is a set of elements that are all
+reachable from one another through this operation.
+
+Is it true that, in group theory, if a member of the group, not a
+member of a given class, is transformed by any other member of the the
+group, the results is also outside the class?
+
+Yes, that is also true.
+
+Because conjugacy classes are {\it disjoint} (they don't overlap),
+every element in a group belongs to exactly one class.  If you start
+with an element $b$ that is outside a given class $C$, then $b$ must
+belong to some other class $D$. Since any transformation (conjugation)
+of $b$ stays within its own class $D$, the result can never ``jump"
+into class $C$.
+
+In short:
+
+\begin{itemize}
+\item Transforming a member of a class results in a member of {\it that
+  same class}.
+\item Transforming an element outside that class results in an element
+  {\it still outside} that class.
+\end{itemize}
+
+{\bf Comment on ``all elements in the same class have the same
+  order''} (top of p.\ 24) If the order of $a$ is $h$, then by definition
+no lower power
 of $h$ gives $e$. So no lower power of $ubu^{-1}$ gives $e$ either. So
 no lower power of $b$ gives $e$. So $b$ is of order $h$ as well.
 
