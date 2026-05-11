@@ -213,14 +213,17 @@ an intrinic mathematical property of an crystal.
 
 {\bf Comment on ``Choose any non-coplanar edges''} (p.\ 45) One way to
 choose such edges is to pick a corner of the polyhedron. The statement
-does not make this necessary, but if assume that that is the case,
+does not make this necessary, but if we assume that that is the case,
 then there are three distinct crystal faces defined by that
 choice. Those crystal planes will be parallel to two of the coordinate
 axes and as such will not have a defined coordinate in those two
-dimensions. Now consider the case where the three edges or their
-parallel counterparts do not meet at any corner. For any given edge,
-there are two faces parallel to the corresponding coordinate axis and
-therefore do not have coordinates along that axis.
+dimensions. Now consider the case where the three edges chosen do not
+meet at any corner. By parallel displacement of the edges, they can
+form a coordinate system with an origin, though the origin is not unique.
+For any given edge, there are two faces parallel to the corresponding
+coordinate axis and therefore those faces do not have coordinates
+along that axis. Those faces may or may not be parallel to the
+four faces defined by the other two edges.
 
 \begin{figure}
   \centering
@@ -229,18 +232,30 @@ therefore do not have coordinates along that axis.
   \label{fig:unit-cell}
 \end{figure}
 
-\href{https://en.wikipedia.org/wiki/Law_of_rational_indices}{Wikipedia}
-has a diagram, reproduced here as Fig.\ \ref{fig:unit-cell}, showing a
-``unit cell''...
+Wikipedia has a
+\href{https://en.wikipedia.org/wiki/Law_of_rational_indices}{page on
+  the LORI}. It shows a diagram, reproduced here as
+Fig.\ \ref{fig:unit-cell}, showing a ``unit cell''. They give the definition as follows:
 
-Wikipedia talks about a single crystal face, Hamermesh talks about
+\begin{quote}
+The law of rational indices states that the intercepts, $OP, OQ, OR$, of
+the natural faces of a crystal form with the unit-cell axes $a, b, c$
+are inversely proportional to prime integers, $h, k, l$. They are called
+the Miller indices of the face. They are usually small because the
+corresponding lattice planes are among the densest and have therefore
+a high interplanar spacing and low indices.
+\end{quote}
+
+Note that Wikipedia talks about a single crystal face, Hamermesh talks about
 two. Zee talks about the lack of five-fold symmetry in crystals and
 not the LORI explicitly.
 
-Hamermesh's formulation is
+{\bf Question} (p.\ 45) Hamermesh's formulation is
 $$
 \frac{u^\prime}{u}:\frac{v^\prime}{v}:\frac{w^\prime}{w} = n_1:n_2:n_3
-$$ He states that this is independent of parallel displacements of a
+$$
+Where primed and unprimed intercepts are for the two planes.
+He states that this is independent of parallel displacements of a
 plane. Doesn't he mean that a plane can be displaced such that this
 condition occurs?
 
@@ -256,4 +271,4 @@ the three edges that form the coordinate axes in the LORI.
   is $1/\boldsymbol{\nu}\cdot\mathbf{n}$''} (p.\ 47) This is a scaler
 giving the magnitude of a vector with direction along
 $\boldsymbol{\nu}$ ``ending'' at the intersection point. Note that the
-dot prodcut is evaluated first.
+dot product is evaluated first.
